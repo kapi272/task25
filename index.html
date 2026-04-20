@@ -5,75 +5,83 @@
   <title>FlowApp</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100">
 
 <!-- NAVBAR -->
-<nav class="flex justify-between items-end px-6 py-4 bg-white shadow">
-  <h1 class="text-xl font-bold">FlowApp</h1>
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur shadow px-6 py-4 flex justify-between items-center">
+  <h1 class="text-lg font-semibold">FlowApp</h1>
 
-  <div class="ml-auto flex items-center gap-5">
-    <div class="hidden md:flex gap-5">
-      <a href="#">Features</a>
-      <a href="#">Pricing</a>
-      <a href="#">Reviews</a>
-    </div>
-
-    <button class="bg-blue-500 text-white px-4 py-2 rounded">
-      Get Started
-    </button>
+  <div class="hidden md:flex gap-6 text-sm">
+    <a href="#" class="hover:text-orange-500">Features</a>
+    <a href="#" class="hover:text-orange-500">Pricing</a>
+    <a href="#" class="hover:text-orange-500">Reviews</a>
   </div>
+
+  <button class="bg-orange-500 text-white px-4 py-2 rounded text-sm hover:bg-orange-600 hover:scale-105 transition">
+    Get Started
+  </button>
 </nav>
 
 
 <!-- HERO -->
-<section class="px-6 py-16">
+<section class="bg-gradient-to-b from-orange-200 via-orange-100 to-white pt-16 pb-20 px-6">
 
-  <div class="max-w-5xl mx-auto text-center">
-    <h1 class="text-4xl font-bold mb-4">
-      Manage your workflow easily
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="text-4xl font-bold mb-3">
+      Simplify Your Workflow with FlowApp
     </h1>
 
-    <p class="mb-6 text-gray-600">
-      FlowApp helps teams stay organized and productive with simple tools.
+    <p class="text-gray-600 mb-6 text-sm">
+      Manage tasks, track progress, and collaborate with your team easily.
     </p>
 
-    <div class="flex justify-center gap-4 mb-10">
-      <button class="bg-blue-500 text-white px-5 py-2 rounded">
+    <!-- buttons -->
+    <div class="flex justify-center gap-3 mb-10">
+
+      <button class="relative bg-orange-500 text-white px-5 py-2 rounded text-sm hover:scale-105 transition">
         Start Free Trial
+
+        <!-- pulse badge -->
+        <span class="absolute -top-2 -right-2 bg-black text-white text-xs px-2 rounded animate-pulse">
+          New
+        </span>
       </button>
 
-      <button class="border px-5 py-2 rounded">
+      <button class="bg-white border px-5 py-2 rounded text-sm hover:scale-105 transition">
         Learn More
       </button>
+
     </div>
   </div>
 
 
-  <!-- IMAGE + FLOATING CARDS -->
-  <div class="relative max-w-4xl mx-auto overflow-visible">
+  <!-- IMAGE AREA -->
+  <div class="relative max-w-3xl mx-auto">
 
-    <img src="https://kissflow.com/hs-fs/hubfs/og_important_tips_to_manage_your_workflows_and_improve_their_efficiency-1.webp?width=1250&height=750&name=og_important_tips_to_manage_your_workflows_and_improve_their_efficiency-1.webp/800x400"
-         class="rounded shadow w-full">
+    <!-- image hover -->
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+         class="rounded-lg shadow-md w-full hover:scale-105 transition duration-300">
 
-    <!-- CARD 1 -->
-    <div class="absolute -bottom-20 -left-6 bg-white p-3 rounded shadow text-sm hover:text-blue-500">
-      <p class="font-semibold">Tasks</p>
+    <!-- floating cards -->
+
+    <!-- tasks -->
+    <div class="hidden md:block absolute top-3 left-3 bg-white p-2 rounded shadow text-xs animate-bounce">
+      <p class="font-medium">Tasks</p>
       <p>12 tasks completed today</p>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="absolute -bottom-20 -right-6 bg-white p-3 rounded shadow text-sm hover:text-blue-500">
-      <p class="font-semibold">Status</p>
+    <!-- project status -->
+    <div class="hidden md:block absolute top-3 right-3 bg-white p-2 rounded shadow text-xs animate-bounce delay-200">
+      <p class="font-medium">Project Status</p>
       <p class="text-green-600">On Track</p>
     </div>
 
-    <!-- CARD 3 -->
-    <div class="absolute -bottom-20 left-1/2 -translate-x-1/2 bg-white p-3 rounded shadow text-sm hover:text-blue-500">
-      <p class="font-semibold">Team</p>
+    <!-- team -->
+    <div class="hidden md:block absolute bottom-3 left-3 bg-white p-2 rounded shadow text-xs animate-bounce delay-300">
+      <p class="font-medium">Team Activity</p>
       <p>+5 online</p>
     </div>
 
@@ -82,11 +90,78 @@
 </section>
 
 
-<!-- CHAT WIDGET -->
-<div class="fixed bottom-6 right-6 bg-blue-500 text-white px-4 py-3 rounded-full shadow-lg z-50">
-  Chat
+<!-- CHAT -->
+<div class="fixed bottom-6 right-6 z-50">
+  <div class="bg-orange-500 text-white px-4 py-2 rounded-full shadow text-sm hover:scale-110 transition cursor-pointer">
+    Chat
+  </div>
 </div>
 
+<!-- EXTRA CONTENT (for scrolling demo) -->
+
+<!-- FEATURES -->
+<section class="px-6 py-16 bg-white">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-8">Features</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="p-6 border rounded shadow hover:scale-105 transition">
+        <h3 class="font-semibold mb-2">Task Management</h3>
+        <p class="text-sm text-gray-600">
+          Organize and track your daily tasks easily.
+        </p>
+      </div>
+
+      <div class="p-6 border rounded shadow hover:scale-105 transition">
+        <h3 class="font-semibold mb-2">Real-time Updates</h3>
+        <p class="text-sm text-gray-600">
+          Stay updated with your team instantly.
+        </p>
+      </div>
+
+      <div class="p-6 border rounded shadow hover:scale-105 transition">
+        <h3 class="font-semibold mb-2">Analytics</h3>
+        <p class="text-sm text-gray-600">
+          Get insights about your progress and performance.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIAL -->
+<section class="px-6 py-16 bg-gray-100">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <h2 class="text-2xl font-bold mb-8">What Users Say</h2>
+
+    <p class="text-gray-600 mb-6">
+      “FlowApp helped our team improve productivity and stay organized.”
+    </p>
+
+    <p class="font-semibold">– Rahul, Project Manager</p>
+
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="px-6 py-16 bg-orange-500 text-white text-center">
+  <h2 class="text-2xl font-bold mb-4">
+    Ready to get started?
+  </h2>
+
+  <p class="mb-6">
+    Join thousands of teams using FlowApp.
+  </p>
+
+  <button class="bg-white text-black px-6 py-2 rounded hover:scale-105 transition">
+    Start Free Trial
+  </button>
+</section>
 
 </body>
 </html>
