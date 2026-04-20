@@ -1,39 +1,14 @@
 # FlowApp Landing Page
 
-A simple SaaS landing page built using **HTML and Tailwind CSS (CDN)**.
+This project is built using HTML and Tailwind CSS.
 
----
+## How to Run
+Open index.html in browser.
 
-## 🚀 Features
-- Glassmorphism navbar  
-- Hero section with gradient + floating elements  
-- Feature cards (grid layout)  
-- Testimonials section  
-- Call-to-action section  
-- Footer with links  
+## What I Learned
+- How relative and absolute positioning works
+- How to place floating elements using Tailwind
+- Difference between fixed and absolute
 
----
-
-## 🎨 Animations
-- Fade up  
-- Hover scale  
-- Floating blobs  
-- Bounce scroll indicator  
-
----
-
-## 🛠️ Tech Used
-- HTML  
-- Tailwind CSS (CDN)  
-
----
-
-## 📱 Notes
-- Basic responsive design  
-- Beginner-level code  
-- No JavaScript used  
-
----
-
-## 📌 Purpose
-Practice building a modern UI with Tailwind and simple animations.
+## Notes
+I rebuilt this project focusing on positioning concepts like floating cards and chat widget.
