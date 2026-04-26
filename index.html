@@ -8,160 +8,184 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-900 text-white">
 
 <!-- NAVBAR -->
-<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur shadow px-6 py-4 flex justify-between items-center">
-  <h1 class="text-lg font-semibold">FlowApp</h1>
+<nav class="sticky top-0 z-50 bg-white/10 backdrop-blur px-6 py-4 flex justify-between items-center " >
 
-  <div class="hidden md:flex gap-6 text-sm">
-    <a href="#" class="hover:text-orange-500">Features</a>
-    <a href="#" class="hover:text-orange-500">Pricing</a>
-    <a href="#" class="hover:text-orange-500">Reviews</a>
+  <h1 class="font-bold text-lg bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent" >
+    FlowApp
+  </h1>
+
+  <div class="flex gap-6 text-sm">
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">Reviews</a>
   </div>
 
-  <button class="bg-orange-500 text-white px-4 py-2 rounded text-sm hover:bg-orange-600 hover:scale-105 transition">
+  <button class="bg-pink-500 px-4 py-2 rounded text-sm hover:text-color bg-black">
     Get Started
   </button>
 </nav>
 
 
 <!-- HERO -->
-<section class="bg-gradient-to-b from-orange-200 via-orange-100 to-white pt-16 pb-20 px-6">
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 
+bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 relative overflow-hidden">
 
-  <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl font-bold mb-3">
-      Simplify Your Workflow with FlowApp
-    </h1>
+  <!-- floating circles -->
+  <div class="absolute w-40 h-40 bg-pink-400 rounded-full blur-3xl opacity-30 top-10 left-10"></div>
+<div class="absolute w-60 h-60 bg-blue-400 rounded-full blur-3xl opacity-30 bottom-10 right-10"></div>
 
-    <p class="text-gray-600 mb-6 text-sm">
-      Manage tasks, track progress, and collaborate with your team easily.
-    </p>
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">
+  Build Better Products Faster
+  </h1>
 
-    <!-- buttons -->
-    <div class="flex justify-center gap-3 mb-10">
+  <p class="text-sm md:text-base mb-6">
+AI-powered tools for collaboration, automation, and analytics.
+  </p>
 
-      <button class="relative bg-orange-500 text-white px-5 py-2 rounded text-sm hover:scale-105 transition">
-        Start Free Trial
+  <div class="flex gap-4 mb-10">
+    <button class="bg-white text-black px-5 py-2 rounded hover:scale-105 transition">
+      Start Free Trial
+    </button>
 
-        <!-- pulse badge -->
-        <span class="absolute -top-2 -right-2 bg-black text-white text-xs px-2 rounded animate-pulse">
-          New
-        </span>
-      </button>
-
-      <button class="bg-white border px-5 py-2 rounded text-sm hover:scale-105 transition">
-        Learn More
-      </button>
-
-    </div>
+    <button class="border px-5 py-2 rounded hover:bg-white hover:text-black transition">
+      Schedule Demo
+    </button>
   </div>
 
+  <!-- dashboard -->
+  <div class="relative w-full max-w-3xl">
 
-  <!-- IMAGE AREA -->
-  <div class="relative max-w-3xl mx-auto">
-
-    <!-- image hover -->
-    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-         class="rounded-lg shadow-md w-full hover:scale-105 transition duration-300">
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+     class="rounded-xl shadow-lg w-full">
 
     <!-- floating cards -->
-
-    <!-- tasks -->
-    <div class="hidden md:block absolute top-3 left-3 bg-white p-2 rounded shadow text-xs animate-bounce">
-      <p class="font-medium">Tasks</p>
-      <p>12 tasks completed today</p>
+    <div class="hidden md:block absolute top-4 left-4 bg-white text-black p-3 rounded shadow text-sm">
+    📋 12 tasks completed today
     </div>
 
-    <!-- project status -->
-    <div class="hidden md:block absolute top-3 right-3 bg-white p-2 rounded shadow text-xs animate-bounce delay-200">
-      <p class="font-medium">Project Status</p>
-      <p class="text-green-600">On Track</p>
+    <div class="hidden md:block absolute top-4 right-4 bg-white text-black p-3 rounded shadow text-sm">
+    📊 On Track
     </div>
 
-    <!-- team -->
-    <div class="hidden md:block absolute bottom-3 left-3 bg-white p-2 rounded shadow text-xs animate-bounce delay-300">
-      <p class="font-medium">Team Activity</p>
-      <p>+5 online</p>
+    <div class="hidden md:block absolute bottom-4 left-6 bg-white text-black p-3 rounded shadow text-sm">
+       👥 +5 online
     </div>
 
   </div>
 
 </section>
 
-
-<!-- CHAT -->
-<div class="fixed bottom-6 right-6 z-50">
-  <div class="bg-orange-500 text-white px-4 py-2 rounded-full shadow text-sm hover:scale-110 transition cursor-pointer">
-    Chat
-  </div>
-</div>
-
-<!-- EXTRA CONTENT (for scrolling demo) -->
 
 <!-- FEATURES -->
-<section class="px-6 py-16 bg-white">
-  <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-2xl font-bold mb-8">Features</h2>
+<section class="px-6 py-16 bg-gray-950 text-center">
 
-    <div class="grid md:grid-cols-3 gap-6">
+  <h2 class="text-2xl font-bold mb-8">Features</h2>
 
-      <div class="p-6 border rounded shadow hover:scale-105 transition">
-        <h3 class="font-semibold mb-2">Task Management</h3>
-        <p class="text-sm text-gray-600">
-          Organize and track your daily tasks easily.
-        </p>
-      </div>
+  <div class="grid md:grid-cols-3 gap-6">
 
-      <div class="p-6 border rounded shadow hover:scale-105 transition">
-        <h3 class="font-semibold mb-2">Real-time Updates</h3>
-        <p class="text-sm text-gray-600">
-          Stay updated with your team instantly.
-        </p>
-      </div>
-
-      <div class="p-6 border rounded shadow hover:scale-105 transition">
-        <h3 class="font-semibold mb-2">Analytics</h3>
-        <p class="text-sm text-gray-600">
-          Get insights about your progress and performance.
-        </p>
-      </div>
-
+  <div class="p-6 bg-gray-800 rounded hover:scale-105 transition">
+      AI Automation
     </div>
-  </div>
+
+     <div class="p-6 bg-gray-800 rounded hover:scale-105 transition">
+      Fast Performance
+     </div>
+
+     <div class="p-6 bg-gray-800 rounded hover:scale-105 transition">
+       Analytics
+     </div>
+
+</div>
+
 </section>
 
 
-<!-- TESTIMONIAL -->
-<section class="px-6 py-16 bg-gray-100">
-  <div class="max-w-4xl mx-auto text-center">
+<!-- TESTIMONIALS -->
+<section class="px-6 py-16 text-center">
 
-    <h2 class="text-2xl font-bold mb-8">What Users Say</h2>
+  <h2 class="text-2xl font-bold mb-8">Testimonials</h2>
 
-    <p class="text-gray-600 mb-6">
-      “FlowApp helped our team improve productivity and stay organized.”
-    </p>
+  <div class="grid md:grid-cols-3 gap-6">
 
-    <p class="font-semibold">– Rahul, Project Manager</p>
+    <div class="bg-white/10 backdrop-blur p-6 rounded">
+      ⭐⭐⭐⭐
+      <p class="mt-2">Very useful for teams</p>
+      <h4 class="mt-2">Aman</h4>
+    </div>
 
+    <div class="bg-white/10 backdrop-blur p-6 rounded mt-6">
+      ⭐⭐⭐⭐⭐
+      <p class="mt-2">Clean and simple UI</p>
+      <h4 class="mt-2">Riya</h4>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur p-6 rounded">
+       ⭐⭐⭐⭐
+    <p class="mt-2">Improved productivity</p>
+    <h4 class="mt-2">Karan</h4>
+    </div>
   </div>
+
 </section>
 
 
 <!-- CTA -->
-<section class="px-6 py-16 bg-orange-500 text-white text-center">
-  <h2 class="text-2xl font-bold mb-4">
-    Ready to get started?
-  </h2>
+<section class="px-6 py-16 text-center bg-gradient-to-r from-pink-500 to-purple-600">
 
+  <h2 class="text-2xl font-bold mb-4">
+   Ready to transform your workflow?
+  </h2>
   <p class="mb-6">
-    Join thousands of teams using FlowApp.
+    Start building smarter today.
   </p>
 
-  <button class="bg-white text-black px-6 py-2 rounded hover:scale-105 transition">
-    Start Free Trial
-  </button>
+  <div class="flex justify-center gap-4">
+    <button class="bg-white text-black px-5 py-2 rounded">
+      Start Free Trial
+    </button>
+
+    <button class="border px-5 py-2 rounded">
+      Schedule Demo
+    </button>
+  </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="bg-black px-6 py-10 text-sm">
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div>
+      <h3 class="font-bold mb-2">Product</h3>
+      <p>Features</p>
+      <p>Pricing</p>
+    </div>
+    <div>
+      <h3 class="font-bold mb-2">Company</h3>
+      <p>About</p>
+      <p>Careers</p>
+    </div>
+    <div>
+      <h3 class="font-bold mb-2">Legal</h3>
+      <p>Privacy</p>
+      <p>Terms</p>
+    </div>
+
+  </div>
+
+  <p class="text-center mt-6">
+  2026 FlowApp
+  </p>
+
+</footer>
+
+<!-- CHAT -->
+<div class="fixed bottom-6 right-6 bg-pink-500 px-4 py-3 rounded-full shadow z-50">
+  💬
+</div>
 
 </body>
 </html>

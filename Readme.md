@@ -1,14 +1,17 @@
-# FlowApp Landing Page
+## Challenges I faced
 
-This project is built using HTML and Tailwind CSS.
+I had difficulty understanding how absolute positioning works.
 
-## How to Run
-Open index.html in browser.
+Initially, my floating cards were not positioned correctly because I forgot to set the parent div to relative.
 
-## What I Learned
-- How relative and absolute positioning works
-- How to place floating elements using Tailwind
-- Difference between fixed and absolute
+I fixed this by adding "relative" and then adjusting top, left, and right values.
+
+## What I learned
+
+- Difference between fixed and absolute positioning
+- How z-index works in layering
+- How Tailwind utility classes control layout
 
 ## Notes
-I rebuilt this project focusing on positioning concepts like floating cards and chat widget.
+
+I rebuilt this project step by step instead of using pre-built templates.
