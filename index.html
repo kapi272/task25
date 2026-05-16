@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowApp Landing Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+   
+
+    <style>
+        /* basic dark background override */
+        body {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body class="text-gray-300 font-sans antialiased">
+
+    <header class="fixed top-0 left-0 w-full z-50 p-4">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4 rounded-xl border border-gray-800 bg-gray-900/70">
+            
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
+                    ⚡
+                </div>
+                <span class="text-lg font-bold text-white tracking-tight">FlowApp</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <a href="#features" class="hover:text-white transition-colors">Features</a>
+                <a href="#testimonials" class="hover:text-white transition-colors">Reviews</a>
+                <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="#cta" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all shadow-md shadow-blue-600/20">
+                    Get Started
+                </a>
+            </div>
+
+            <label class="md:hidden cursor-pointer relative z-50">
+                <input type="checkbox" class="sr-only peer" id="toggle-menu" />
+                <div class="space-y-1">
+                    <span class="block w-6 h-0.5 bg-gray-300"></span>
+                    <span class="block w-6 h-0.5 bg-gray-300"></span>
+                    <span class="block w-6 h-0.5 bg-gray-300"></span>
+                </div>
+                
+                <div class="absolute right-0 top-6 w-48 bg-gray-900 border border-gray-800 p-4 rounded-lg flex flex-col gap-3 opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition-opacity">
+                    <a href="#features" class="text-sm py-1">Features</a>
+                    <a href="#testimonials" class="text-sm py-1">Reviews</a>
+                    <a href="#pricing" class="text-sm py-1">Pricing</a>
+                </div>
+            </label>
+
+        </nav>
+    </header>
+    <section class="relative min-h-screen pt-32 flex flex-col items-center justify-center px-4 overflow-hidden">
+        
+        <div class="absolute top-1/4 left-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <span class="inline-block text-xs bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full border border-blue-500/20 font-medium mb-6">
+                New layout is live
+            </span>
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight mb-6">
+                Build products <br>
+                <span class="text-white">that teams actually enjoy using</span>
+            </h1>
+
+            <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-8">
+                FlowApp helps small teams stay organized, move faster, and keep their work in one place without adding more noise.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#cta" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-lg text-sm transition-transform hover:-translate-y-0.5 text-center">
+                    Start free trial
+                </a>
+                <a href="#demo" class="w-full sm:w-auto border border-gray-700 bg-gray-900/50 text-gray-300 hover:text-white px-6 py-3 rounded-lg text-sm text-center transition-colors">
+                    Watch demo
+                </a>
+            </div>
+
+            <div class="w-full max-w-3xl mx-auto rounded-xl border border-gray-800 bg-gray-900 p-2 shadow-2xl transition-transform hover:scale-[1.01] duration-300">
+                <div class="bg-gray-950 rounded-lg aspect-[16/10] p-4 text-left flex flex-col relative">
+                    
+                    <div class="flex items-center gap-1.5 border-b border-gray-800 pb-3 mb-4">
+                        <span class="w-3 h-3 rounded-full bg-red-500/30"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/30"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/30"></span>
+                    </div>
+
+                    <div class="flex-1 grid grid-cols-4 gap-4">
+                        <div class="col-span-1 border-r border-gray-900 pr-2 flex flex-col gap-2">
+                            <div class="h-4 w-20 bg-gray-800 rounded"></div>
+                            <div class="h-3 w-14 bg-gray-800/50 rounded"></div>
+                            <div class="h-3 w-16 bg-blue-500/20 rounded"></div>
+                        </div>
+                        <div class="col-span-3 flex flex-col gap-4">
+                            <div class="grid grid-cols-3 gap-2">
+                                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800">
+                                    <div class="w-10 h-2 bg-gray-800 rounded mb-2"></div>
+                                    <div class="w-6 h-3 bg-blue-400/50 rounded"></div>
+                                </div>
+                                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800">
+                                    <div class="w-8 h-2 bg-gray-800 rounded mb-2"></div>
+                                    <div class="w-8 h-3 bg-purple-400/50 rounded"></div>
+                                </div>
+                                <div class="bg-gray-900 p-3 rounded-lg border border-gray-800">
+                                    <div class="w-12 h-2 bg-gray-800 rounded mb-2"></div>
+                                    <div class="w-5 h-3 bg-emerald-400/50 rounded"></div>
+                                </div>
+                            </div>
+                            <div class="flex-1 border border-dashed border-gray-800 rounded-lg flex items-center justify-center bg-gray-900/20">
+                                <button class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-500 transition-transform hover:scale-105 text-lg">
+                                    ▶️
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mt-12 text-gray-600 flex flex-col items-center gap-1">
+                <span class="text-xs uppercase tracking-wider font-semibold">See what’s inside</span>
+                <span class="text-lg animate-bounce">⬇️</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="features" class="max-w-6xl mx-auto px-4 py-24">
+        
+        <div class="text-center mb-16">
+            <span class="text-xs text-blue-500 font-bold uppercase tracking-widest">What it does</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">A simple set of tools for everyday work</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <div class="md:col-span-2 bg-gray-900 border border-gray-800 rounded-2xl p-6 flex justify-between hover:border-gray-700">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-blue-500 border flex items-center justify-center text-blue-400 mb-4 text-lg">
+                        💡
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Automation that gets out of the way</h3>
+                    <p class="text-gray-400 text-sm max-w-md leading-relaxed">
+                        Set up repeat tasks once and let the app handle the routine work so your team can focus on the actual project.
+                </div>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex justify-between hover:border-gray-700 ">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-amber-500 border flex items-center justify-center text-amber-400 mb-4 text-lg">
+                        ⚡
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">Quick response</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                    Pages load quickly, actions feel instant, and you do not have to wait around for the interface to catch up.
+                    </p>
+                </div>
+                <div class="mt-4 font-mono text-3xl font-bold text-white">0.2s</div>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex justify-between hover:border-gray-700">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500 flex items-center justify-center text-emerald-400 mb-4 text-lg">
+                        🔒
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">Security you do not have to think about</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        Your data stays protected with standard encryption and clear access controls.
+                    </p>
+                </div>
+                <div class="mt-4 text-xs font-mono text-emerald-400 bg-emerald-500/5 px-2 py-1 rounded border border-emerald-500/10 w-fit">
+                    AES-256
+                </div>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 flex justify-between hover:border-gray-700">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 mb-4 text-lg">
+                        📊
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-1">Analytics that are easy to read</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed">
+                        See the basics at a glance instead of digging through a wall of charts.
+                    </p>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 bg-gray-900 border border-gray-800 rounded-2xl p-6 flex justify-between hover:border-gray-700">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-4 text-lg">
+                        🔄
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Sync that keeps everyone aligned</h3>
+                    <p class="text-gray-400 text-sm max-w-md leading-relaxed">
+                        Updates move across the app as they happen, so nobody is stuck working from an old version.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="testimonials" class="max-w-6xl mx-auto px-4 py-24">
+        
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white tracking-tight">People seem to stick with it</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-gray-900/40 border border-gray-800 p-6 rounded-xl shadow-lg">
+                <div class="flex text-yellow-500 mb-3 text-sm">★★★★★</div>
+                <p class="text-gray-300 text-sm italic mb-4 leading-relaxed">
+                    The layout is clean and the flow makes sense. I did not have to spend time figuring out where anything lives.
+                </p>
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-full bg-gray-700 text-white font-bold text-xs flex items-center justify-center">S</div>
+                    <div>
+                        <p class="text-xs font-bold text-white">Sarah Jenkins</p>
+                        <p class="text-xs font-bold text-gray">Product Manager</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900 border border-gray-800 p-6 rounded-xl shadow-xl md:translate-y-4">
+                <div class="flex text-yellow-500 mb-3 text-sm">★★★★</div>
+                <p class="text-gray-200 text-sm italic mb-4 leading-relaxed">
+                    We used it as a quick hub for planning and it stayed simple even as the project got busier.
+                </p>
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-full bg-purple-700 text-white font-bold text-xs flex items-center justify-center">M</div>
+                    <div>
+                        <p class="text-xs font-bold text-white">Marcus Chang</p>
+                        <p class="text-xs font-bold text-gray">Engineering Lead</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-900/40 border border-gray-800 p-6 rounded-xl shadow-lg">
+                <div class="flex text-yellow-500 mb-3 text-sm">★★★</div>
+                <p class="text-gray-300 text-sm italic mb-4 leading-relaxed">
+                    It does the basics well and does not get in the way, which is usually what matters most.
+                </p>
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-full bg-gray-700 text-white font-bold text-xs flex items-center justify-center">T</div>
+                    <div>
+                        <p class="text-xs font-bold text-white">Tanya Lewis</p>
+                        <p class="text-xs font-bold text-gray">DevOps Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="cta" class="max-w-5xl mx-auto px-4 py-20 mb-20">
+        <div class="border border-gray-800 p-8 md:p-12 rounded-2xl text-center relative">
+            
+            <div class="max-w-xl mx-auto relative z-10">
+                <h2 class="text-2xl md:text-4xl font-extrabold text-white mb-3">Want to try it?</h2>
+                <p class="text-gray-400 text-sm">
+                    A quick setup is usually enough to see whether it fits your workflow.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-3">
+                    <a href="#" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium px-6 py-3 rounded-lg text-center transition-all">
+                        Start free trial
+                    </a>
+                    <a href="#" class="w-full sm:w-auto bg-gray-900 border border-gray-700 hover:bg-gray-800 text-gray-300 text-sm font-medium px-6 py-3 rounded-lg text-center transition-all">
+                        Schedule a demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="border-t border-gray-900 bg-gray-950">
+        <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
+            
+            <div class="col-span-2 flex flex-col gap-3">
+                <span class="text-base font-bold text-white">FlowApp</span>
+                <p class="text-xs text-gray-500 max-w-xs leading-relaxed">
+                    A small landing page project built to practice clean layout, spacing, and responsive structure.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Product</h4>
+                <ul class="space-y-1.5 text-xs text-gray-500">
+                    <li><a href="#" class="hover:text-gray-400">Features</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Security</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Company</h4>
+                <ul class="space-y-1.5 text-xs text-gray-500">
+                    <li><a href="#" class="hover:text-gray-400">About</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Blog</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
